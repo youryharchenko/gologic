@@ -1,7 +1,5 @@
 # Gologic
 
-[![Build Status](https://travis-ci.org/hiredman/gologic.png?branch=master)](https://travis-ci.org/hiredman/gologic)
-
 A port of core minikanren with inequality to Go based on doctor Byrd's
 thesis.
 
@@ -38,11 +36,11 @@ a goal constructor is a function that returns a goal
 
 See `gologic_test.go`
 
-`examples/zebra.go` has an example of solving the zebra puzzle ported from
+`zebra/zebra.go` has an example of solving the zebra puzzle ported from
 Clojure's `core.logic`. You can run the example like:
 
 ```sh
-GOPATH=$PWD/examples go build examples/zebra.go && time ./zebra
+go run zebra/zebra.go
 ```
 
 `gologic.Call` is a goal constructor that is a useful helper for
